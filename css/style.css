@@ -1,10 +1,5 @@
-/* 
-font-family: 'Nunito', sans-serif; 
-font-family: 'Mulish', sans-serif;
-font-family: 'Luckiest Guy', cursive;
-*/
-
-body {
-  margin: 0;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
