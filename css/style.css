@@ -380,13 +380,13 @@ img {
   padding: 40px 0;
 }
 
+.navbar-top__menu-button {
+  display: none;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
-}
-
-.navbar__menu-button {
-  display: none;
 }
 
 .navbar-bottom {
@@ -498,7 +498,6 @@ img {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding: 22px 0;
@@ -506,6 +505,9 @@ img {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 
@@ -535,6 +537,7 @@ img {
             flex-direction: column;
     border: none;
     outline: none;
+    padding: 0;
     background-color: #fff;
     cursor: pointer;
   }
