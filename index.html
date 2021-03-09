@@ -25,6 +25,7 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Best Tour Plan</title>
 </head>
@@ -58,8 +59,8 @@
     </div>
     <!-- /.container -->
     <div class="navbar-bottom">
-      <div class="container">
-        <ul class="navbar-menu navbar-bottom__navbar-menu">
+      <div class="container container--medium">
+        <ul class="navbar-menu">
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
@@ -132,8 +133,37 @@
         </div>
       </div>
       <!-- /.hotel-info -->
+
+      <div class="hotel-grid">
+        <div class="slider">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/hotels-image/hotel-1.jpg" alt="hotel-image" class="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/hotels-image/hotel-1.jpg" alt="hotel-image" class="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/hotels-image/hotel-1.jpg" alt="hotel-image" class="">
+              </div>
+              ...
+            </div>
+            <!-- If we need navigation buttons -->
+            <button class="slider-button slider-button--prev"></button>
+            <button class="slider-button slider-button--next"></button>
+          </div>
+          <!-- /.swiper-container -->
+        </div>
+      </div>
+
     </div>
     <!-- /.container -->
   </section>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
