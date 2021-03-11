@@ -1,210 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="android-icon-192x192.png"
+		/>
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+		<link rel="manifest" href="manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Best Tour Plan</title>
-</head>
-<body>
-  <header class="navbar">
-    <div class="container">
-      <div class="navbar-top">
-        <a href="#" class="logo">
-          <img src="img/horizontal-logo.svg" alt="main-logo" class="logo__image">
-        </a>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Best Tour Plan</title>
+	</head>
+	<body>
+		<header class="navbar">
+			<div class="container">
+				<div class="navbar-top">
+					<a href="#" class="logo">
+						<img
+							src="img/horizontal-logo.svg"
+							alt="main-logo"
+							class="logo__image"
+						/>
+					</a>
 
-        <form action="#" class="search navbar__search">
-          <input type="text" class="search__input" placeholder="Search Location">
-          <button class="search__button">
-            <img src="img/search.svg" alt="search-icon">
-          </button>
-        </form>
+					<form action="#" class="search navbar__search">
+						<input
+							type="text"
+							class="search__input"
+							placeholder="Search Location"
+						/>
+						<button class="search__button">
+							<img src="img/search.svg" alt="search-icon" />
+						</button>
+					</form>
 
-        <a href="#" class="user navbar__user">
-          <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
-          <span class="user__name">Nathan</span>
-        </a>
+					<a href="#" class="user navbar__user">
+						<img
+							src="img/user-avatar.jpg"
+							alt="avatar: Nathan"
+							class="user__avatar"
+						/>
+						<span class="user__name">Nathan</span>
+					</a>
 
-        <button class="menu-button navbar-top__menu-button">
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-        </button>
-      </div>
-      <!-- /.navbar-top -->
-    </div>
-    <!-- /.container -->
-    <div class="navbar-bottom">
-      <div class="container container--medium">
-        <ul class="navbar-menu">
-          <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">All Deals</a>
-          </li>
-          <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Hotels</a>
-          </li>
-          <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Activities</a>
-          </li>
-          <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
-          </li>
-          <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Restaurants</a>
-          </li>
-          <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Events</a>
-          </li>
-          <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Rodrigues</a>
-          </li>
-        </ul>
-        <!-- /.navbar-menu -->
-      </div>
-      <!-- /.container -->
-    </div>
-      <!-- /.navbar-bottom -->
-  </header>
-  <nav class="breadcrumb">
-    <div class="container">
-      <ul class="breadcrumb-list">
-        <li class="breadcrumb-list__item">
-          <a href="#" class="breadcrumb-list__link">Home</a>
-        </li>
-        <li class="breadcrumb-list__item">
-          <a href="#" class="breadcrumb-list__link">Flash Offers</a>
-        </li>
-        <li class="breadcrumb-list__item">
-          Grand Hilton Hotel
-        </li>
-      </ul>
-    </div>
-    <!-- /.container -->
-  </nav>
-  <!-- /.breadcrumb -->
-  <section class="hotel">
-    <div class="container">
-      <div class="hotel-info">
+					<button class="menu-button navbar-top__menu-button">
+						<span class="menu-button__line"></span>
+						<span class="menu-button__line"></span>
+						<span class="menu-button__line"></span>
+					</button>
+				</div>
+				<!-- /.navbar-top -->
+			</div>
+			<!-- /.container -->
+			<div class="navbar-bottom">
+				<div class="container container--medium">
+					<ul class="navbar-menu">
+						<li class="navbar-menu__item">
+							<a href="#" class="navbar-menu__link">All Deals</a>
+						</li>
+						<li class="navbar-menu__item">
+							<a href="#" class="navbar-menu__link">Hotels</a>
+						</li>
+						<li class="navbar-menu__item">
+							<a href="#" class="navbar-menu__link">Activities</a>
+						</li>
+						<li class="navbar-menu__item">
+							<a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+						</li>
+						<li class="navbar-menu__item">
+							<a href="#" class="navbar-menu__link">Restaurants</a>
+						</li>
+						<li class="navbar-menu__item">
+							<a href="#" class="navbar-menu__link">Events</a>
+						</li>
+						<li class="navbar-menu__item">
+							<a href="#" class="navbar-menu__link">Rodrigues</a>
+						</li>
+					</ul>
+					<!-- /.navbar-menu -->
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.navbar-bottom -->
+		</header>
+		<nav class="breadcrumb">
+			<div class="container">
+				<ul class="breadcrumb-list">
+					<li class="breadcrumb-list__item">
+						<a href="#" class="breadcrumb-list__link">Home</a>
+					</li>
+					<li class="breadcrumb-list__item">
+						<a href="#" class="breadcrumb-list__link">Flash Offers</a>
+					</li>
+					<li class="breadcrumb-list__item">Grand Hilton Hotel</li>
+				</ul>
+			</div>
+			<!-- /.container -->
+		</nav>
+		<!-- /.breadcrumb -->
+		<section class="hotel">
+			<div class="container">
+				<div class="hotel-info">
+					<div class="hotel-info__text">
+						<div class="hotel-wrapper">
+							<div class="stars">
+								<img src="img/Star.svg" alt="star" />
+								<img src="img/Star.svg" alt="star" />
+								<img src="img/Star.svg" alt="star" />
+								<img src="img/Star.svg" alt="star" />
+								<img src="img/Star.svg" alt="star" />
+							</div>
+							<h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
+							<span class="offer hotel-info__offer">Flash Offer</span>
+						</div>
+						<p class="hotel-description hotel-info__description">
+							Half-Board/ All Inclusive + Complimentary Activities + Child Stays
+							Free
+						</p>
+					</div>
 
-        <div class="hotel-info__text">
-          <div class="hotel-wrapper">
-            <div class="stars">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
+					<div class="rating hotel-info__rating">
+						<span class="rating__text">User ratings</span>
+						<span class="rating__counter">4.5/5</span>
+					</div>
+				</div>
+				<!-- /.hotel-info -->
+
+				<div class="hotel-grid">
+					<div class="slider hotel__slider">
+						<!-- Slider main container -->
+						<div class="swiper-container">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<img
+										src="img/hotels-image/hilton/hotel-1.jpg"
+										alt="hotel-image"
+										class="swiper-slide__image"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="img/hotels-image/hilton/hotel-2.jpg"
+										alt="hotel-image"
+										class="swiper-slide__image"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="img/hotels-image/hilton/hotel-3.jpg"
+										alt="hotel-image"
+										class="swiper-slide__image"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="img/hotels-image/hilton/hotel-4.jpeg"
+										alt="hotel-image"
+										class="swiper-slide__image"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="img/hotels-image/hilton/hotel-5.jpg"
+										alt="hotel-image"
+										class="swiper-slide__image"
+									/>
+								</div>
+							</div>
+							<!-- If we need navigation buttons -->
+							<button class="slider-button slider-button--prev"></button>
+							<button class="slider-button slider-button--next"></button>
+						</div>
+						<!-- /.swiper-container -->
+					</div>
+					<!-- /.slider -->
+
+					<div class="hotel-data">
+						<div class="booking">
+							<div class="booking__info">
+								<div class="booking__price">
+									<span class="booking__start">price starts as</span>
+									<strong class="booking__pricetag">$ 8,500</strong>
+									<span class="booking__per-room">per room / night</span>
+								</div>
+								<!-- /.booking__price -->
+								<div class="booking__room">
+									<div class="booking__text">
+										<img
+											src="img/booking/user.svg"
+											alt="user-icon"
+											class="booking__icon"
+										/>
+										<span class="booking__description">2 x Guests</span>
+									</div>
+									<div class="booking__text">
+										<img
+											src="img/booking/home.svg"
+											alt="home-icon"
+											class="booking__icon"
+										/>
+										<span class="booking__description">1 x Room</span>
+									</div>
+								</div>
+								<!-- /.booking__room -->
+							</div>
+							<!-- /.booking__info -->
+							<div class="call-center booking__call-center">
+								<span class="call-center__text">Quick Booking</span>
+								<a href="tel:12100" class="call-center__phone-call">
+									<img src="img/booking/phone-call.svg" alt="phone-icon" />
+									<span class="call-center__number">12100</span>
+								</a>
+							</div>
+							<!-- /.call-center -->
+							<button class="button booking__button">View Other Options</button>
+						</div>
+						<!-- /.booking -->
+            <div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3952.541498826532!2d98.29922!3d7.838252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa67a542329d011e1!2sHilton%20Phuket%20Arcadia%20Resort%20%26%20Spa!5e0!3m2!1sen!2sru!4v1615435510320!5m2!1sen!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
-            <span class="offer hotel-info__offer">Flash Offer</span>
-          </div>
-          <p class="hotel-description hotel-info__description">
-            Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
-          </p>
-        </div>
+						<!-- /.map -->
+					</div>
+					<!-- /.hotel-data -->
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
 
-        <div class="rating hotel-info__rating">
-          <span class="rating__text">User ratings</span>
-          <span class="rating__counter">4.5/5</span>
-        </div>
-      </div>
-      <!-- /.hotel-info -->
-
-      <div class="hotel-grid">
-        <div class="slider hotel__slider">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/hotels-image/hotel-1.jpg" alt="hotel-image" class="swiper-slide__image">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/hotels-image/hotel-1.jpg" alt="hotel-image" class="swiper-slide__image">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/hotels-image/hotel-1.jpg" alt="hotel-image" class="swiper-slide__image">
-              </div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <button class="slider-button slider-button--prev"></button>
-            <button class="slider-button slider-button--next"></button>
-          </div>
-          <!-- /.swiper-container -->
-        </div>
-        <!-- /.slider -->
-
-        <div class="hotel-data">
-          <div class="booking">
-            <div class="booking__info">
-              <div class="booking__price">
-                <span class="booking__start">price starts as</span>
-                <strong class="booking__pricetag">$ 8,500</strong>
-                <span class="booking__per-room">per room / night</span>
-              </div>
-              <!-- /.booking__price -->
-              <div class="booking__room">
-                <div class="booking__text">
-                  <img src="img/booking/user.svg" alt="user-icon" class="booking__icon">
-                  <span class="booking__description">2 x Guests</span>
-                </div>
-                <div class="booking__text">
-                  <img src="img/booking/home.svg" alt="home-icon" class="booking__icon">
-                  <span class="booking__description">1 x Room</span>
-                </div>
-              </div>
-              <!-- /.booking__room -->
-            </div>
-            <!-- /.booking__info -->
-            <div class="call-center booking__call-center">
-              <span class="call-center__text">Quick Booking</span>
-              <a href="tel:12100" class="call-center__phone-call">
-                <img src="img/booking/phone-call.svg" alt="phone-icon">
-                <span class="call-center__number">12100</span>
-              </a>
-            </div>
-            <!-- /.call-center -->
-            <button class="button booking__button">View Other Options</button>
-          </div>
-          <!-- /.booking -->
-          <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.54144461325!2d98.29703101471709!3d7.83825770865709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1615268137808!5m2!1sru!2sru" width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <!-- /.map -->
-        </div>
-        <!-- /.hotel-data -->
-
-      </div>
-
-    </div>
-    <!-- /.container -->
-  </section>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+		<section class="newsletter">
+			<div class="newsletter-wrapper">
+				<h2 class="newsletter-title newsletter__title">
+					subscribe to our
+					<span class="newsletter-title__strong">Newsletter</span>
+				</h2>
+				<form action="#" class="subscribe newsletter__subscribe">
+					<input
+						type="text"
+						class="subscribe__input"
+						placeholder="Your email address"
+					/>
+					<button class="subscribe__button">Send</button>
+				</form>
+			</div>
+		</section>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
