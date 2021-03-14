@@ -150,11 +150,11 @@
 					<div class="hotel-info__text">
 						<div class="hotel-wrapper">
 							<div class="stars">
-								<img src="img/Star.svg" alt="star" />
-								<img src="img/Star.svg" alt="star" />
-								<img src="img/Star.svg" alt="star" />
-								<img src="img/Star.svg" alt="star" />
-								<img src="img/Star.svg" alt="star" />
+								<img src="img/Star.svg" alt="star" class="stars__image" />
+								<img src="img/Star.svg" alt="star" class="stars__image" />
+								<img src="img/Star.svg" alt="star" class="stars__image" />
+								<img src="img/Star.svg" alt="star" class="stars__image" />
+								<img src="img/Star.svg" alt="star" class="stars__image" />
 							</div>
 							<h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
 							<span class="offer hotel-info__offer">Flash Offer</span>
@@ -165,9 +165,9 @@
 						</p>
 					</div>
 
-					<div class="rating hotel-info__rating">
-						<span class="rating__text">User ratings</span>
-						<span class="rating__counter">4.5/5</span>
+					<div class="user-rating hotel-info__rating">
+						<span class="user-rating__text">User ratings</span>
+						<span class="user-rating__counter">4.5/5</span>
 					</div>
 				</div>
 				<!-- /.hotel-info -->
@@ -278,7 +278,220 @@
 			</div>
 			<!-- /.container -->
 		</section>
-
+		<!-- /.hotel -->
+		<section class="other-packages">
+			<div class="container">
+				<h2 class="other-packages__title">Other Packages</h2>
+				<div class="other-packages-wrapper">
+					<div class="hotel-card other_packages__card hotel-card--main">
+						<span class="hotel-card__flash-offer hotel-card__flash-offer--main">Flash Offer</span>
+						<img src="img/other-packages/hotel-card-main.jpg" alt="hotel-image" class="hotel-card__image hotel-card__image--main">
+						<div class="hotel-card__info hotel-card__info--main">
+							<div class="stars hotel-card__stars">
+								<img src="img/Star.svg" alt="star" class="stars__image" />
+								<img src="img/Star.svg" alt="star" class="stars__image" />
+								<img src="img/Star.svg" alt="star" class="stars__image" />
+								<img src="img/Star.svg" alt="star" class="stars__image" />
+								<img src="img/Star.svg" alt="star" class="stars__image" />
+							</div>
+							<h4 class="hotel-card__title hotel-card__title--main">Hotel Blue Haven</h4>
+							<p class="hotel-card__introduce">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
+							<div class="hotel-card__room hotel-card__room--main">
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/map-pin.svg"
+										alt="user-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">1749 Wheeler Ridge  Delaware</span>
+								</div>
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/user.svg"
+										alt="home-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">2 x Guests</span>
+								</div>
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/home.svg"
+										alt="home-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">1 x Room</span>
+								</div>
+							</div>
+							<span class="hotel-card__old-price">$ 10,500</span>
+							<div class="hotel-card__bottom">
+								<span class="hotel-card__actual-price">$ 8,500</span>
+								<button class="hotel-card__button">Book Now</button>
+							</div>
+						</div>
+					</div>
+					<!-- ./hotel-card -->
+					<div class="hotel-card other_packages__card">
+						<span class="hotel-card__flash-offer">Flash Offer</span>
+						<img src="img/other-packages/hotel-card-1.jpg" alt="hotel-image" class="hotel-card__image">
+						<div class="hotel-card__info">
+							<h4 class="hotel-card__title">LUX* Belle Mare</h4>
+							<div class="hotel-card__room">
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/map-pin.svg"
+										alt="user-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">1749 Wheeler Ridge  Delaware</span>
+								</div>
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/user.svg"
+										alt="home-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">2 x Guests</span>
+								</div>
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/home.svg"
+										alt="home-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">1 x Room</span>
+								</div>
+							</div>
+							<span class="hotel-card__old-price">$ 8,500</span>
+							<div class="hotel-card__bottom">
+								<span class="hotel-card__actual-price">$ 3,000</span>
+								<button class="hotel-card__button">Book Now</button>
+							</div>
+						</div>
+					</div>
+					<!-- ./hotel-card -->
+					<div class="hotel-card other_packages__card">
+						<span class="hotel-card__flash-offer">Flash Offer</span>
+						<img src="img/other-packages/hotel-card-2.jpg" alt="hotel-image" class="hotel-card__image">
+						<div class="hotel-card__info">
+							<h4 class="hotel-card__title">White Palace</h4>
+							<div class="hotel-card__room">
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/map-pin.svg"
+										alt="user-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">1749 Wheeler Ridge  Delaware</span>
+								</div>
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/user.svg"
+										alt="home-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">2 x Guests</span>
+								</div>
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/home.svg"
+										alt="home-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">1 x Room</span>
+								</div>
+							</div>
+							<span class="hotel-card__old-price">$ 10,500</span>
+							<div class="hotel-card__bottom">
+								<span class="hotel-card__actual-price">$ 9,500</span>
+								<button class="hotel-card__button">Book Now</button>
+							</div>
+						</div>
+					</div>
+					<!-- ./hotel-card -->
+					<div class="hotel-card other_packages__card">
+						<span class="hotel-card__flash-offer">Flash Offer</span>
+						<img src="img/other-packages/hotel-card-3.jpg" alt="hotel-image" class="hotel-card__image">
+						<div class="hotel-card__info">
+							<h4 class="hotel-card__title">Luxury Place</h4>
+							<div class="hotel-card__room">
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/map-pin.svg"
+										alt="user-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">1749 Wheeler Ridge  Delaware</span>
+								</div>
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/user.svg"
+										alt="home-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">2 x Guests</span>
+								</div>
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/home.svg"
+										alt="home-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">1 x Room</span>
+								</div>
+							</div>
+							<span class="hotel-card__old-price">$ 4,500</span>
+							<div class="hotel-card__bottom">
+								<span class="hotel-card__actual-price">$ 2,500</span>
+								<button class="hotel-card__button">Book Now</button>
+							</div>
+						</div>
+					</div>
+					<!-- ./hotel-card -->
+					<div class="hotel-card other_packages__card">
+						<span class="hotel-card__flash-offer">Flash Offer</span>
+						<img src="img/other-packages/hotel-card-4.jpg" alt="hotel-image" class="hotel-card__image">
+						<div class="hotel-card__info">
+							<h4 class="hotel-card__title">Hotel Five Star</h4>
+							<div class="hotel-card__room">
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/map-pin.svg"
+										alt="user-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">1749 Wheeler Ridge  Delaware</span>
+								</div>
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/user.svg"
+										alt="home-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">2 x Guests</span>
+								</div>
+								<div class="hotel-card__text">
+									<img
+										src="img/booking/home.svg"
+										alt="home-icon"
+										class="hotel-card__icon"
+									/>
+									<span class="hotel-card__description">1 x Room</span>
+								</div>
+							</div>
+							<span class="hotel-card__old-price">$ 6,500</span>
+							<div class="hotel-card__bottom">
+								<span class="hotel-card__actual-price">$ 3,500</span>
+								<button class="hotel-card__button">Book Now</button>
+							</div>
+						</div>
+					</div>
+					<!-- ./hotel-card -->
+				</div>
+				<!-- /.other-packages-wrapper -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.other-packages -->
 		<section class="newsletter parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
 			<div class="newsletter-wrapper">
 				<h2 class="newsletter-title newsletter__title">
@@ -296,7 +509,6 @@
 			</div>
 		</section>
 		<!-- /.newsletter -->
-
 		<section class="reviews">
 			<div class="container">
 
@@ -434,6 +646,7 @@
 				<!-- /.activities-wrapper -->
 			</div>
 		</section>
+		<!-- /.activities -->
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/parallax.min.js"></script>
