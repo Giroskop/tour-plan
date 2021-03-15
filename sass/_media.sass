@@ -14,12 +14,18 @@
     height: 230px
   .other-packages
     &-wrapper
-      grid-template-columns: repeat(3, 300px)
+      grid-template-columns: 1fr 1fr 1fr
       grid-template-rows: repeat(2, 500px)
       grid-gap: 20px
+
   .footer
+    &-wrapper
+      max-width: 930px
+      grid-grap: 15px
     &__input
       flex-basis: 100%
+    &__logo
+
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -72,12 +78,49 @@
   .card
     width: 340px
     height: 255px
-  
+
   .other-packages
     &-wrapper
-      grid-template-columns: repeat(2, 300px)
+      max-width: 680px
+      grid-template-columns: repeat(2, 50%)
       grid-template-rows: repeat(3, 500px)
       grid-gap: 20px
+
+  .footer
+    padding: 73px 0 33px
+    &-wrapper
+      grid-template-columns: 29% 42% 29%
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49%
+    &__logo
+      grid-row: 1/2
+      grid-column: span 1
+      width: 105px
+      height: 120px
+    &__social
+      &-network
+        grid-row: 1/2
+        grid-column: span 2
+        align-self: center
+    &__categories
+      grid-row: 2/3
+      grid-column: span 1
+    &__legal
+      grid-column: span 1
+    &__additional
+      grid-column: span 1
+    &__contact
+      &-details
+        grid-column: span 2
+        grid-row: 3
+      &-form
+        grid-column: span 2
+        grid-row: 4
+
+    &-bottom
+        &__ul
+          margin-left: 0
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -179,9 +222,48 @@
 
   .other-packages
     &-wrapper
-      grid-template-columns: repeat(2, 350px)
-      grid-template-rows: repeat(3, 500px)
-      grid-gap: 30px
+      grid-template-columns: repeat(2, 48%)
+      grid-template-rows: repeat(3, 250px)
+      grid-gap: 20px
+  .hotel-card
+    &__flash-offer
+      top: 0
+      z-index: 1
+    &__info
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      background-color: rgba($dark,0.6 )
+      justify-content: flex-start
+      &--main
+        position: static
+        height: 100%
+        width: 50%
+        background-color: $dark
+        padding: 20px 21px 25px 32px
+    &__top
+      flex-wrap: nowrap
+      align-items: center
+      justify-content: space-between
+    &__stars
+      order: 1
+      margin-left: 10px
+      margin-bottom: 0
+    &__room
+      &--main
+        margin-top: 0
+        margin-bottom: 24px
+    &__actual-price
+      font-size: 20px
+    &__button
+      padding: 10px 18px
+    &__introduce
+      display: none
+
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -204,3 +286,61 @@
     &__title
       font-size: 16px
       line-height: 20px
+
+  .other-packages
+    &-wrapper
+      grid-template-columns: 350px
+      grid-template-rows: repeat(5, 250px)
+      justify-content: center
+      grid-column-gap: 0
+  .hotel-card
+    grid-column: span 1
+    &__flash-offer
+      &--main
+        padding: 4px 9px
+        font-size: 8px
+        line-height: 10px
+    &__image
+      &--main
+        width: 100%
+    &__info
+      &--main
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        background-color: rgba($dark,0.6 )
+  .footer
+    padding: 69px 0 21px
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+
+    &-bottom
+      flex-wrap: wrap
+      &__ul
+        padding-bottom: 10px
+      &__image
+        position: static

@@ -53,6 +53,10 @@
     &--main
       height: 100%
       width: 50%
+  &__top
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 27px
   &__info
     height: 250px
     display: flex
@@ -65,8 +69,9 @@
       width: 50%
       padding: 46px 21px 30px 44px
   &__stars
-    flex-basis: auto
+    flex-basis: 100%
     margin-bottom: 5px
+    height: 8px
   &__title
     font-weight: 700
     font-size: 18px
@@ -75,7 +80,7 @@
     margin: 0
     margin-bottom: 23px
     &--main
-      margin-bottom: 27px
+      margin-bottom: 0
   &__room
     display: flex
     flex-direction: column
