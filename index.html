@@ -58,7 +58,7 @@
 		<title>Best Tour Plan</title>
 	</head>
 	<body>
-		<header class="navbar">
+		<header class="navbar navbar--mobile--fixed">
 			<div class="container">
 				<div class="navbar-top">
 					<a href="#" class="logo">
@@ -69,7 +69,7 @@
 						/>
 					</a>
 
-					<form action="#" class="search navbar__search">
+					<form action="#" class="search navbar__search navbar__search--mobile--hidden">
 						<input
 							type="text"
 							class="search__input"
@@ -80,7 +80,7 @@
 						</button>
 					</form>
 
-					<a href="#" class="user navbar__user">
+					<a href="#" class="user navbar__user navbar__user--mobile--hidden">
 						<img
 							src="img/user-avatar.jpg"
 							alt="avatar: Nathan"
@@ -101,6 +101,28 @@
 			<div class="navbar-bottom">
 				<div class="container container--medium">
 					<ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <a href="#" class="user navbar__user navbar__user--mobile--visible">
+                <img
+                  src="img/user-avatar.jpg"
+                  alt="avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="search-icon" />
+                </button>
+              </form>
+            </li>
 						<li class="navbar-menu__item">
 							<a href="#" class="navbar-menu__link">All Deals</a>
 						</li>
@@ -871,15 +893,16 @@
 							<input type="text" class="input footer__input" placeholder="Your Full Name*">
 							<input type="text" class="input footer__input" placeholder="Phone Number*">
 							<textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
-							<button class="button footer__button">Send</button>
-							<span class="footer__info">* Required Fields</span>
+              <div class="footer__bottom-form">
+                <button class="button footer__button">Send</button>
+                <span class="footer__info">* Required Fields</span>
+              </div>
 						</form>
 					</div>
 					<!-- /.footer__contacts-form -->
 				</div>
 				<!-- /.footer-wrapper -->
 				<div class="footer-bottom footer__bottom">
-					<div class="empty"></div>
 					<ul class="footer-bottom__ul">
 						<li class="footer-bottom__item">
 							<a href="#" class="footer-bottom__link">Disclaimer</a>
