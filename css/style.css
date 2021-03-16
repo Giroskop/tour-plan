@@ -1849,7 +1849,7 @@ img {
   }
   .navbar-bottom--visible {
     display: block;
-    padding: 31px 38px;
+    padding: 31px 20px;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -1860,13 +1860,11 @@ img {
   }
   .navbar-menu__item {
     margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
   }
   .navbar-menu__item--mobile--visible {
     display: block;
-  }
-  .navbar-menu__item:nth-child(2) {
-    max-width: 400px;
-    width: 100%;
   }
   .search__input {
     min-width: 100%;
