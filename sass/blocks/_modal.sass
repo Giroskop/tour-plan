@@ -10,6 +10,8 @@
     background-color: rgba(0, 143, 223, 0.39)
     z-index: 100
   &__dialog
+    max-height: 100%
+    overflow: scroll
     visibility: hidden
     opacity: 0
     position: fixed
@@ -17,6 +19,7 @@
     top: 50%
     transform: translate(-50%, -50%)
     max-width: 478px
+    min-width: 478px
     padding: 33px 85px
     color: $light
     background-color: $dark

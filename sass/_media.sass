@@ -121,6 +121,10 @@
     &-bottom
       &__ul
         margin-left: 0
+
+  .modal
+    &__dialog
+      min-width: 478px
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -313,6 +317,7 @@
   .footer
     &__input
       flex-basis: 100%
+
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -409,3 +414,11 @@
         margin: 0
       &__image
         position: static
+
+  .modal
+    &__dialog
+      border-radius: 0
+      max-width: 100vw
+      min-width: 100%
+      height: 100%
+      padding: 10px 20px
