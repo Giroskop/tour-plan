@@ -37,11 +37,38 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 
 $('.parallax-window').parallax({imageSrc: 'img/newsletter-bg.jpg'});
 
+// Mobile menu
 let menuButton = document.querySelector('.menu-button')
 menuButton.addEventListener('click', function() {
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible')
 })
 
+// form validation
+$('.form').each( function() {
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "minimum 6 characters needed"
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+      tel: {
+        required: "Telephone required",
+      },
+    }
+  })
+})
+
+// Masks
+$(document).ready(function(){
+  $('input[type="tel"]').mask('+0 (000) 000-00-00');
+});
+
+// 3points
 let cardIntroduce = document.querySelector('.hotel-card__introduce')
 let cardIntroduceHeight = getComputedStyle(cardIntroduce).height
 
