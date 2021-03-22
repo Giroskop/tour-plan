@@ -86,6 +86,10 @@
       grid-template-columns: repeat(2, 50%)
       grid-template-rows: repeat(3, 500px)
       grid-gap: 20px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
 
   .footer
     padding: 73px 0 33px
@@ -277,10 +281,22 @@
       grid-template-columns: repeat(2, 48%)
       grid-template-rows: repeat(3, 250px)
       grid-gap: 20px
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 42px
   .hotel-card
     &__flash-offer
       top: 0
+      right: 0
+      left: auto
       z-index: 1
+      border-radius: 0 4px 0 4px
+      &--main
+        top: 26px
+        right: auto
+        left: 0
+        border-radius: 0 4px 4px 0
     &__info
       position: absolute
       left: 0
@@ -348,11 +364,14 @@
   .other-packages
     &-wrapper
       grid-template-columns: minmax(300px, 350px)
-      grid-template-rows: repeat(5, 250px)
+      grid-template-rows: 500px repeat(5, 250px)
       justify-content: center
       grid-column-gap: 0
   .hotel-card
     grid-column: span 1
+    grid-row: span 1
+    &--main
+      display: block
     &__flash-offer
       &--main
         padding: 4px 9px
@@ -360,16 +379,21 @@
         line-height: 10px
     &__image
       &--main
-        width: 100%
+        width: 350px
+        height: 250px
+        object-fit: cover
+        display: block
     &__info
       padding-bottom: 10px
       justify-content: space-between
       &--main
-        position: absolute
-        top: 0
-        left: 0
         width: 100%
-        background-color: rgba($dark,0.6 )
+        height: 250px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 30px 21px 25px 32px
+        background-color: $dark
 
   .footer
     padding: 69px 0 21px

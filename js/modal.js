@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
   const overlay = document.querySelector('.modal__overlay')
   const dialog = document.querySelector('.modal__dialog')
-  const btn = document.querySelector('.booking__button')
+  let btn = []
+  btn = btn.concat(
+    document.querySelector('.booking__button'),
+    Array.from(document.querySelectorAll('.hotel-card__button')), 
+    Array.from(document.querySelectorAll('.card__button'))
+  )
   const btnClose = document.querySelector('.modal__close')
 
   function modalCLose() { 
@@ -13,7 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     dialog.classList.add('modal-visible')
   }
 
-  btn.addEventListener('click', modalOpen)
+  btn.forEach( function(item) {
+    item.addEventListener('click', modalOpen)
+  })
   btnClose.addEventListener('click', modalCLose)
 
   document.addEventListener('keydown', function(event) {

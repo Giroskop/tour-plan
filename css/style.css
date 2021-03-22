@@ -385,12 +385,6 @@ img {
 }
 
 .button {
-  min-width: 160px;
-  min-height: 50px;
-  padding: 18px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
   color: #ffffff;
   background-color: #EC1F46;
   border-radius: 4px;
@@ -815,15 +809,9 @@ img {
 .booking__button {
   width: 100%;
   min-height: 45px;
-  border: none;
-  outline: none;
-  cursor: pointer;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  color: #ffffff;
-  background: #EC1F46;
-  border-radius: 4px;
 }
 
 .call-center {
@@ -1095,11 +1083,6 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  color: #ffffff;
-  border: none;
-  outline: none;
-  background-color: #EC1F46;
-  border-radius: 4px;
   padding: 10px 27px;
   max-width: 140px;
 }
@@ -1178,18 +1161,14 @@ img {
 .subscribe__button {
   position: absolute;
   min-width: 65px;
-  padding: 0 6px;
+  height: 100%;
   right: 0;
   top: 0;
-  height: 100%;
-  border: none;
-  outline: none;
-  background-color: #EC1F46;
-  cursor: pointer;
+  padding: 0 6px;
+  border-radius: 0px 4px 4px 0;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #ffffff;
 }
 
 .reviews {
@@ -1411,17 +1390,11 @@ img {
 }
 
 .card__button {
-  border: none;
-  outline: none;
-  background-color: #EC1F46;
-  border-radius: 4px;
   padding: 7px 22px;
-  cursor: pointer;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  color: #ffffff;
 }
 
 .footer {
@@ -1602,6 +1575,15 @@ img {
   resize: none;
 }
 
+.footer__button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .footer__info {
   font-weight: bold;
   font-size: 12px;
@@ -1726,13 +1708,6 @@ img {
   resize: none;
 }
 
-.modal__info {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #E0E0E0;
-}
-
 .modal__title {
   font-weight: bold;
   font-size: 18px;
@@ -1757,6 +1732,22 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 15px;
+}
+
+.modal__info {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+}
+
+.modal__button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal-visible {
@@ -1877,6 +1868,11 @@ img {
     -ms-grid-rows: (500px)[3];
         grid-template-rows: repeat(3, 500px);
     grid-gap: 20px;
+  }
+  .other-packages__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
   }
   .footer {
     padding: 73px 0 33px;
@@ -2145,9 +2141,23 @@ img {
         grid-template-rows: repeat(3, 250px);
     grid-gap: 20px;
   }
+  .other-packages__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
+  }
   .hotel-card__flash-offer {
     top: 0;
+    right: 0;
+    left: auto;
     z-index: 1;
+    border-radius: 0 4px 0 4px;
+  }
+  .hotel-card__flash-offer--main {
+    top: 26px;
+    right: auto;
+    left: 0;
+    border-radius: 0 4px 4px 0;
   }
   .hotel-card__info {
     position: absolute;
@@ -2235,8 +2245,8 @@ img {
   .other-packages-wrapper {
     -ms-grid-columns: minmax(300px, 350px);
         grid-template-columns: minmax(300px, 350px);
-    -ms-grid-rows: (250px)[5];
-        grid-template-rows: repeat(5, 250px);
+    -ms-grid-rows: 500px (250px)[5];
+        grid-template-rows: 500px repeat(5, 250px);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2244,6 +2254,10 @@ img {
   }
   .hotel-card {
     grid-column: span 1;
+    grid-row: span 1;
+  }
+  .hotel-card--main {
+    display: block;
   }
   .hotel-card__flash-offer--main {
     padding: 4px 9px;
@@ -2251,7 +2265,11 @@ img {
     line-height: 10px;
   }
   .hotel-card__image--main {
-    width: 100%;
+    width: 350px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
   }
   .hotel-card__info {
     padding-bottom: 10px;
@@ -2260,11 +2278,20 @@ img {
             justify-content: space-between;
   }
   .hotel-card__info--main {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    background-color: rgba(10, 34, 61, 0.6);
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 21px 25px 32px;
+    background-color: #0A223D;
   }
   .footer {
     padding: 69px 0 21px;

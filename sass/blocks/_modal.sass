@@ -42,11 +42,6 @@
     max-width: 100%
     margin-top: 15px
     resize: none
-  &__info
-    font-weight: bold
-    font-size: 12px
-    line-height: 15px
-    color: #E0E0E0
   &__title
     font-weight: bold
     font-size: 18px
@@ -56,12 +51,25 @@
     margin: 0
     margin-bottom: 15px
     text-align: center
-  &__bottom-form
-    flex-basis: 100%
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin-top: 15px
+  &__bottom
+    &-form
+      flex-basis: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 15px
+  &__info
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+  &__button
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    font-weight: 700
+    font-size: 12px
+    line-height: 15px
   &-visible
     visibility: visible
     opacity: 1
