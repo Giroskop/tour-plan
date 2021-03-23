@@ -54,6 +54,8 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Best Tour Plan</title>
 	</head>
@@ -75,7 +77,7 @@
 							class="search__input"
 							placeholder="Search Location"
 						/>
-						<button class="search__button">
+						<button class="button search__button">
 							<img src="img/search.svg" alt="search-icon" />
 						</button>
 					</form>
@@ -573,7 +575,7 @@
 				<form action="send.php" method="POST" class="subscribe newsletter__subscribe">
 					<input
             name="mail"
-						type="text"
+						type="email"
 						class="subscribe__input"
 						placeholder="Your email address"
 					/>
@@ -709,7 +711,7 @@
 			<div class="container">
 				<h2 class="activities__title">Other Activities</h2>
 				<div class="activities-wrapper">
-					<div class="card activities__card">
+					<div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
 						<img
 							src="img/activities/activity-1.jpg"
 							alt="The curious corner 
@@ -720,7 +722,7 @@
 						<button class="button card__button">Book Now</button>
 					</div>
 					<!-- ./card -->
-					<div class="card activities__card">
+					<div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
 						<img
 							src="img/activities/activity-2.jpg"
 							alt="Gymkhana club golf
@@ -731,7 +733,7 @@
 						<button class="button card__button">Book Now</button>
 					</div>
 					<!-- ./card -->
-					<div class="card activities__card">
+					<div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
 						<img
 							src="img/activities/activity-3.jpg"
 							alt="Tamarind falls hiking
@@ -742,7 +744,7 @@
 						<button class="button card__button">Book Now</button>
 					</div>
 					<!-- ./card -->
-					<div class="card activities__card">
+					<div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
 						<img
 							src="img/activities/activity-4.jpg"
 							alt="The blue marine discovery
@@ -891,11 +893,13 @@
 					<div class="footer__contact-form">
 						<h3 class="footer__title footer__title--mb-3">Send us a message</h3>
 						<form action="send.php" method="POST" class="form footer__form">
-              <div class="footer__input-group">
-                <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*" required minlength="2">
-              </div>
-              <div class="footer__input-group">
-                <input name="tel" type="tel" class="phone input footer__input" placeholder="Phone Number*" required>
+              <div class="footer__input-top">
+                <div class="footer__input-group">
+                  <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*" required minlength="2">
+                </div>
+                <div class="footer__input-group">
+                  <input name="tel" type="tel" class="phone input footer__input" placeholder="Phone Number*" required minlength="18">
+                </div>
               </div>
 							<textarea name="message" class="message footer__message" placeholder="Message"></textarea>
               <div class="footer__bottom-form">
@@ -935,7 +939,7 @@
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
 						<form action="send.php" method="POST" class="form modal__form">
 							<input name="name" type="text" class="input modal__input" placeholder="Your Full Name*" required minlength="2">
-							<input name="tel" type="tel" class="input modal__input" data-mask="00/00/0000" placeholder="Phone Number*" required>
+							<input name="tel" type="tel" class="input modal__input" data-mask="00/00/0000" placeholder="Phone Number*" required minlength="18">
 							<input name="email" type="email" class="input modal__input" placeholder="Email*" required>
 							<textarea name="message" class="message modal__message" placeholder="Message"></textarea>
               <div class="modal__bottom-form">
@@ -950,6 +954,7 @@
 		<script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
 		<script src="js/main.js"></script>
     <script src="js/modal.js"></script>
 	</body>

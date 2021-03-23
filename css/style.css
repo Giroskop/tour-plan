@@ -478,6 +478,7 @@ img {
   padding-left: 23px;
   padding-right: 75px;
   border: none;
+  outline: none;
   background-color: #F5FAFE;
   font-size: 12px;
   line-height: 15px;
@@ -490,11 +491,7 @@ img {
   width: 65px;
   top: 0;
   right: 0;
-  border: none;
-  outline: none;
-  background-color: #EC1F46;
   border-radius: 0px 6px 6px 0px;
-  cursor: pointer;
 }
 
 .user {
@@ -1142,17 +1139,17 @@ img {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   border: none;
   outline: none;
   padding-left: 33px;
   padding-right: 75px;
+  border-radius: 4px;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
@@ -1559,6 +1556,19 @@ img {
 
 .footer__input {
   width: 100%;
+}
+
+.footer__input-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__input-group {
